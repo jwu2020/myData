@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Title</title>
+
+        {% load staticfiles %}
+        <link rel="icon" href="{% static '/images/icon.ico' %}"/>
+        <script> userName='{{ user.get_username }}';</script>
+        <script src="{% static '/pages/detailed/scripts/empty_page.js' %}"></script>
+        <script src="{% static '/elements/titleBar/scripts/titleBar.js' %}"></script>
+        <script src="{% static '/elements/menu/scripts/menu.js' %}"></script>
+        <script src="{% static '/elements/panel/scripts/panel.js' %}"></script>
+        <script src="{% static '/elements/notification/notify.js' %}"></script>
+        <script src="{% static '/visLibs/highcharts/highcharts.js' %}"></script>
+
+        <link rel="stylesheet"  href="{% static '/pages/detailed/styles/main.css' %}"/>
+        <link rel="stylesheet"  href="{% static '/pages/detailed/styles/empty_page.css' %}"/>
+        <link rel="stylesheet"  href="{% static '/elements/titleBar/styles/titleBar.css' %}"/>
+        <link rel="stylesheet"  href="{% static '/elements/menu/styles/menu.css' %}"/>
+        <link rel="stylesheet"  href="{% static '/elements/panel/styles/panel.css' %}"/>
+    </head>
+    <body onload="main('{{ platform }}')">
+        <div id="inBody" ></div>
+    </body>
+</html>

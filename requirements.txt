@@ -1,0 +1,7 @@
+selenium
+django
+djongo
+dnspython
+mongoengine
+sqlparse==0.2.4
+chromedriver

@@ -1,0 +1,28 @@
+.empty-message{
+    text-align:center;
+    padding-top:25%;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+html {
+    background-color: #222222;
+}
+
+body {
+    display: flex;
+    background-color: white;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}

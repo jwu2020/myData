@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MyData</title>
+        {% csrf_token %}
+        {% load staticfiles %}
+
+        <link rel="icon" href="{% static '/images/icon.ico' %}"/>
+        <script> userName='{{ user.get_username }}';</script>
+        <script src="{% static '/pages/login/scripts/main.js' %}"></script>
+        <script src="{% static '/elements/titleBar/scripts/titleBar.js' %}"></script>
+        <script src="{% static '/elements/menu/scripts/menu.js' %}"></script>
+        <script src="{% static '/elements/notification/notify.js' %}"></script>
+
+
+        <link rel="stylesheet"  href="{% static '/pages/login/styles/main.css' %}"/>
+        <link rel="stylesheet"  href="{% static '/themes/material.css' %}"/>
+        <link rel="stylesheet"  href="{% static '/elements/titleBar/styles/titleBar.css' %}"/>
+    </head>
+    <body onload="main('{{pie_data}}', '{{bar_data}}', '{{bar_categories}}')">
+        <div id="inBody">
+
+{#            <form id="loginForm" name="loginFrom" method="post">{% csrf_token %}#}
+            <form id="loginForm" name="loginFrom" onsubmit="submitForm(this); return false;">
+                <div id="login-title-bar">
+                    <div><input id="login-title" name="logOrSign" type="radio" checked="true"><label for="login-title" >LOGIN</label></div>
+                    <div><input id="signup-title" name="logOrSign" type="radio"><label style="float: right;" for="signup-title">SIGN UP</label></div>
+                </div>
+                <div><span id="login-bar"></span></div>
+                <input class="sign-up login" id="username" name="username" type="text" placeholder="Name"/>
+                <div class="sign-in-element"><input class="sign-up" id="email" name="email" type="text" placeholder="Email"/></div>
+                <input class="sign-up login" id="password" name="password" type="password" placeholder="Password"/>
+                <div class="sign-in-element"><input class="sign-up" id="password2" name="password2" type="password" placeholder="Confirm Password"/></div>
+                <input id="login-button" name="login" type="submit" value="Login"/>
+            </form>
+        </div>
+    </body>
+</html>

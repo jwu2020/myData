@@ -1,0 +1,124 @@
+html {
+    background-color: #222222;
+}
+
+body {
+    display: flex;
+    background-color: white;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.78) /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+
+.confirm {
+    border-radius: 4px;
+    background-color: #455ba9;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.platform-input {width: 22%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    /* border: none; */
+    background: #f1f1f1;
+    border-color: #00000012;
+    border-width: thin;
+}
+
+
+.export-button {
+    display: inline-block;
+    background-color: rgba(22, 32, 75, 0.83);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0px;
+    transition: all 0.5s;
+    cursor: pointer;
+    float: right;
+    width: 150px;
+    height: 30px;
+}
+
+.export-button:hover {
+    background-color: rgba(22, 32, 75, 1);
+}
+
+.export-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.export-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.export-button:hover span {
+  padding-right: 25px;
+}
+
+.export-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

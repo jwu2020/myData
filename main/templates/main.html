@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Title</title>
+
+        {% load staticfiles %}
+        <link rel="icon" href="{% static '/images/icon.ico' %}"/>
+        <script> userName='{{ user.get_username }}';</script>
+        <script src="{% static '/pages/main/scripts/main.js' %}"></script>
+        <script src="{% static '/elements/titleBar/scripts/titleBar.js' %}"></script>
+        <script src="{% static '/elements/menu/scripts/menu.js' %}"></script>
+        <script src="{% static '/elements/panel/scripts/panel.js' %}"></script>
+        <script src="{% static '/elements/notification/notify.js' %}"></script>
+        <script src="{% static '/visLibs/highcharts/highcharts.js' %}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+        <link rel="stylesheet"  href="{% static '/pages/main/styles/main.css' %}"/>
+        <link rel="stylesheet"  href="{% static '/themes/material.css' %}"/>
+        <link rel="stylesheet"  href="{% static '/elements/titleBar/styles/titleBar.css' %}"/>
+        <link rel="stylesheet"  href="{% static '/elements/menu/styles/menu.css' %}"/>
+        <link rel="stylesheet"  href="{% static '/elements/panel/styles/panel.css' %}"/>
+
+    </head>
+    <body onload="main(' {{pie_data}}', '{{bar_data}}', '{{db_status}}', '{{bar_categories}}')">
+        <div id="inBody"></div>
+    </body>
+</html>

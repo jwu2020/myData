@@ -1,0 +1,106 @@
+
+body {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+#inBody {
+    margin-bottom: 60px;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 120px);
+    min-height: 360px;
+    background-color: #c1c1c1;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginForm {
+    padding: 60px 80px 60px 80px;
+    margin: 10px;
+    box-sizing: border-box;
+    width: 40%;
+    height: 60%;
+    min-width: 400px;
+    min-height: 350px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+    transition: 500ms;
+    overflow: hidden;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 30px 10px 20px;
+    font-size: initial;
+    border-color: #afafaf;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    animation-duration: 500ms;
+
+}
+
+.sign-in-element {
+    width: 100%;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    max-height: 0px;
+    display: none;
+    -moz-transition: 500ms;
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
+
+#login-bar {
+    float: left;
+    transition: 500ms ease;
+    margin-bottom: 30px;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    20%, 60% {transform: translateX(-10px);}
+    40%, 80% {transform: translateX(10px);}
+}
+
+#login-button {
+    cursor: pointer;
+    margin-top: 50px;
+    color: white;
+    background-color: #5a84c2;
+    border-width: 0px;
+    padding: 10px;
+}
+
+#login-button:hover {
+    background-color: #537ab3;
+}
+
+#login-button:active {
+    background-color: #496b9e;
+}
+
+#login-title-bar {
+    margin-bottom: 5px;
+    font-size: x-large;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#signup-title label {
+    text-align: right;
+}
+
+#signup-title, #login-title {
+    display: none;
+}
+
+input[name="logOrSign"]:not(:checked)+label {
+    color: #b1b1b1;
+}

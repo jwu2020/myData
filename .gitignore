@@ -1,0 +1,15 @@
+user/*.pyc
+main/__pycache__/*pyc
+user/migrations/__pycache__/*.pyc
+
+myData/__pycache__/*.pyc
+main/management/commands/facebook-jesswu756/*
+main/management/commands/.DS_Store
+ main/management/commands/__pycache__/*
+
+ ../.idea/workspace.xml
+!.gitignore
+/Users/jessica.a.wu/Documents/Personal/2019/Semester2/ELEC3609/Assignment/ELEC3609-DJJ/myData/user/management/commands/facebook-jesswu756
+main/static/images/.DS_Store
+
+.idea/*

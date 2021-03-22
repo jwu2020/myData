@@ -1,0 +1,64 @@
+.platform-icon {
+    /*width: auto;*/
+    height: auto;
+    /*padding: 10px 0px 10px 20px;*/
+    box-sizing: border-box;
+}
+
+.platform-container {
+    height: 70%;
+    display: block;
+    text-align: center;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    height: 16%;
+    background-color: #46a6dd;
+    font-family: roboto, sans-serif;
+    font-size: unset;
+    font-weight: lighter
+}
+
+.connected {
+    background-color:#46a6dd;
+}
+
+.disconnected {
+    background-color: #cacaca;
+    height: 50px;
+}
+
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.goal-text {
+    font-family: roboto, sans-serif;
+    font-size: unset;
+    font-weight: lighter
+}
+
+
+/* Full-width input fields */
+input[type=number] {
+  width: 22%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}

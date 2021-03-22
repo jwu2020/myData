@@ -1,0 +1,38 @@
+
+
+html {
+    background-color: #222222;
+}
+
+body {
+    display: flex;
+    background-color: white;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+#inBody {
+    margin-top: 60px;
+    width:100%;
+    min-height: calc(100vh - 60px);
+    height:fit-content;
+    background-color: #c1c1c1;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, input {
+    font-weight: 300;
+}
+
+
+a {
+    text-decoration: none;
+}
